@@ -29,6 +29,31 @@ test('TC007:Remove product from the cart',async({page})=>{
     await page.locator('[data-test="remove-sauce-labs-bike-light"]').click();
 
     await expect(page.locator('[data-test="shopping-cart-badge"]')).toHaveCount(0);
+});
+
+
+test('TC008:Add multiple product from the cart',async({page})=>{
+
+    await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+
+    await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
+
+    await expect(page.locator('[data-test="shopping-cart-badge"]')).toHaveText('2');
+
+
+});
+
+test('TC009:Cart Page shows selected products ',async({page})=>{
+    
+    await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+
+    await page.locator('[data-test="shopping-cart-link"]').click();
+
+    await expect(page).toHaveURL(/cart/);
+
+    await expect(page.getByText(products[0].name)).toBeVisible();
+
+
 })
 
 

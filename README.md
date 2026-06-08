@@ -21,18 +21,23 @@ The objective of this assignment is to demonstrate basic QA automation skills, i
 # Project Structure
 
 project-root/
-│
-├── tests/
-│ └── login.spec.ts
-│
-├── test-data/
-│ └── users.ts
-│
-├── playwright.config.ts
-├── package.json
-├── README.md
-│
-└── playwright-report/
+|
+|--test-data/
+|          |--product.ts
+|          |--users.ts
+|--tests/
+|       |--cart.spec.ts
+|       |--login.spec.ts
+|       |--products.spec.ts
+|
+|--SauceDemo_TestCases.xlsx
+|--DebuggingNote.md
+|--screenshots
+|--playwright.config.ts
+|--package.json
+|_README.md
+
+
 
 
 # Daily Progress Log 
@@ -50,15 +55,24 @@ Objectives Completed:
 Automated Scenarios:
 - TC_001 – Verify that the Login Page loads correctly
 - TC_002 – Verify successful login with valid credentials
-- TC_003 – Verify login fails with an invalid password
+- TC_003 – Verify login fails with an invalid password 
 - TC_004 – Verify that a locked-out user cannot log in
 
 Deliverables:
 -Playwright Project Setup
--Login Automation Scripts
+-Login Automation Scripts 
 -Test Execution
--HTML report generation
--HTML Test Report
+-HTML report generation 
+-HTML Test Report 
+
+Day 2: Functional Automation + Assertions + Debugging
+
+-Automated Product and Cart Test Cases 
+-Automated Checkout Test cases
+-Added Assertions for Product,Cart and Checkout validations
+-Created reusable test data files(products.ts)
+-Performed Debugging and prepared Debugging Note
+-Generated and Reviewed Playwright HTML reports
 
 # Installation
 
