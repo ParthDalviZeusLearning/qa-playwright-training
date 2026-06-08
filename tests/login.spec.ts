@@ -72,3 +72,6 @@ test('TC004:Login with locked-user',async({page})=>{
      await expect(page.locator('[data-test="error"]')).toContainText('locked out');
 
 });
+
+
+
