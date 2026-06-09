@@ -97,5 +97,56 @@ test-data
 
 This file uses TypeScript interfaces and typed objects to improve maintainability and reusability.
 
+# Page Object Model
+The framework was refactored using the Page Object Model design pattern to improve maintainability and reusability.
+Implemented Page Classes:
+- Login Page
+- Products Page
+- Cart Page
+- Checkout Page
 
+# Reusable Login Helper
+
+A reusable login helper was created to avoid duplicate login steps across test files.
+
+Location: utils/testHelpers.ts
+
+# Test Tags
+
+The following tags are used for test categorization and selective execution:
+- @smoke
+- @regression
+- @negative
+- @cart
+- @checkout
+
+Example command for selective excution:
+npx playwright test --grep @smoke
+
+# Automated Test Coverage
+
+Login 
+
+- TC_001 – Verify that the Login Page loads correctly @smoke
+- TC_002 – Verify successful login with valid credentials @smoke
+- TC_003 – Verify login fails with an invalid password @negative
+- TC_004 – Verify that a locked-out user cannot log in @negative
+
+Products and Cart 
+
+- TC005 - Verify product list should be visible after login @smoke
+- TC006 - Verify add one product to cart  @cart @regression
+- TC007 - Verify remove product from cart  @cart @regression
+- TC008 - Verify add multiple products to cart  @cart @regression
+- TC009 - Verify cart page should show selected products  @cart @regression
+- TC016 - Verify Product details page is displayed @regression 
+
+Checkout
+- TC011 - Verify Checkout with missing first name @negative @checkout
+- TC012 - Verify Checkout with missing last name @negative @checkout
+- TC013 - Verify Checkout with missing postal code @negative @checkout
+- TC014 - Verify Checkout with all fields empty @negative @checkout
+- TC015 - Verify complete order successfully @checkout
+
+Total Test Scenarios Automated = 16
 

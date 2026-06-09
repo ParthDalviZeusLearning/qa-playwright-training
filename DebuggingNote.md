@@ -1,7 +1,7 @@
 # DEBUGGING NOTE
 
 # Failed Test : 
-TC_009-Cart Page should show Selected +roducts
+TC_009-Cart Page should show Selected products
 
 # Expected Result : 
 The product added in the Inventory page should be reflected in the Cart Page 

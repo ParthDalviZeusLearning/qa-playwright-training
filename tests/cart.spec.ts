@@ -17,7 +17,7 @@ test.beforeEach(async({page})=>{
 
 });
 
-test('TC006:Add one product to cart @regression',async({page})=>{
+test('TC006:Add one product to cart  @cart @regression',async({page})=>{
  /*
    await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
    await expect(page.locator('[data-test="shopping-cart-badge"]')).toHaveText('1');*/
@@ -29,7 +29,7 @@ test('TC006:Add one product to cart @regression',async({page})=>{
 });
 
 
-test('TC007:Remove product from the cart @regression',async({page})=>{
+test('TC007:Remove product from the cart @cart @regression',async({page})=>{
  
     /*
     await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
@@ -42,7 +42,7 @@ test('TC007:Remove product from the cart @regression',async({page})=>{
 });
 
 
-test('TC008:Add multiple product from the cart @regression',async({page})=>{
+test('TC008:Add multiple product from the cart @cart @regression',async({page})=>{
    /*
     await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
@@ -58,7 +58,7 @@ test('TC008:Add multiple product from the cart @regression',async({page})=>{
 
 });
 
-test('TC009:Cart Page shows selected products @regression',async({page})=>{
+test('TC009:Cart Page shows selected products @cart @regression',async({page})=>{
     /*
     await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     await page.locator('[data-test="shopping-cart-link"]').click();

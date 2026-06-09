@@ -68,7 +68,7 @@ test('TC003:Invalid Login @negative',async({page})=>{
 });
 
 
-test('TC004:Login with locked-user @negative ',async({page})=>{
+test('TC004:Login with locked-user @negative S',async({page})=>{
     /*
     //visits the specified URL
      await page.goto("https://www.saucedemo.com/");

@@ -51,13 +51,14 @@ Day 3: Page Object Model + Final Framework Structure
 
 
 Objectives Completed : 
--Created Page Object Class Files with TypeScript classes and constructors
-  -pages/LoginPage.ts 
-  -pages/ProductsPage.ts 
-  -pages/CartPage.ts 
-  -pages/CheckoutPage.ts 
--Refactored repeated code
--Use typed method parameters
--Organized automation code properly
--Added test tags
--Prepared final submission
+
+- Created Page Object Class Files with TypeScript classes and constructors
+  - pages/LoginPage.ts 
+  - pages/ProductsPage.ts 
+  - pages/CartPage.ts 
+  - pages/CheckoutPage.ts 
+- Refactored repeated code
+- Use typed method parameters
+- Organized automation code properly
+- Added test tags
+- Prepared final submission

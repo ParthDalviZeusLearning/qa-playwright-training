@@ -11,7 +11,7 @@ test.beforeEach(async ({page}) => {
 });
 
 
-test('TC005:Product list visible after login',async({page})=>{
+test('TC005:Product list visible after login @smoke',async({page})=>{
   /*
   await page.goto("https://www.saucedemo.com/");
   await page.locator('[data-test="username"]').fill(users[0].username);
@@ -26,7 +26,7 @@ test('TC005:Product list visible after login',async({page})=>{
 });
 
 
-test('TC016:Product page is displayed',async({page})=>{
+test('TC016:Product details page is displayed @regression',async({page})=>{
   /*
   await page.goto("https://www.saucedemo.com/");
   await page.locator('[data-test="username"]').fill(users[0].username);
