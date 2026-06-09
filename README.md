@@ -22,59 +22,34 @@ The objective of this assignment is to demonstrate basic QA automation skills, i
 
 project-root/
 |
-|--test-data/
-|          |--product.ts
-|          |--users.ts
 |--tests/
 |       |--cart.spec.ts
 |       |--login.spec.ts
 |       |--products.spec.ts
+|--pages/
+|       |--CartPage.ts
+|       |--CheckoutPage.ts
+|       |--LoginPage.ts
+|       |--ProductsPage.ts
 |
-|--SauceDemo_TestCases.xlsx
-|--DebuggingNote.md
+|--test-data/
+|          |--product.ts
+|          |--users.ts
+|
+|--utils/
+|          |--testHelpers.ts
+|         
 |--screenshots
 |--playwright.config.ts
 |--package.json
+|--SauceDemo_TestCases.xlsx
+|--DebuggingNote.md
+|--DailyProgressLog.md
+|--SelfReviewNote.md
 |_README.md
 
 
-
-
-# Daily Progress Log 
-
-
-Day 1: Playwright Setup and Login Automation (05/06/2026)
-
-Objectives Completed:
--Setup Playwright project using TypeScript
--Installed Playwright Browsers
--Created reusable test data file(users.ts)
--Designed function test scenarios for SauceDemo
--Automated Login related Test cases
-
-Automated Scenarios:
-- TC_001 – Verify that the Login Page loads correctly
-- TC_002 – Verify successful login with valid credentials
-- TC_003 – Verify login fails with an invalid password 
-- TC_004 – Verify that a locked-out user cannot log in
-
-Deliverables:
--Playwright Project Setup
--Login Automation Scripts 
--Test Execution
--HTML report generation 
--HTML Test Report 
-
-Day 2: Functional Automation + Assertions + Debugging
-
--Automated Product and Cart Test Cases 
--Automated Checkout Test cases
--Added Assertions for Product,Cart and Checkout validations
--Created reusable test data files(products.ts)
--Performed Debugging and prepared Debugging Note
--Generated and Reviewed Playwright HTML reports
-
-# Installation
+# Installation 
 
 1. Clone the repository: 
   git clone <https://github.com/ParthDalviZeusLearning/qa-playwright-training>
@@ -89,7 +64,7 @@ Day 2: Functional Automation + Assertions + Debugging
  npx playwright install
 
 
-# Running Tests
+# Steps to Run Tests
 
 -Run all tests:
 
@@ -104,7 +79,7 @@ Day 2: Functional Automation + Assertions + Debugging
  npx playwright test --headed
 
 
-# View Test Report
+# Steps to  View Test Report
 
 Generate and open the HTML report:
 
@@ -116,7 +91,9 @@ npx playwright show-report
 
 Test user credentials are maintained in:
 
-test-data/users.ts
+test-data
+|-users.ts
+|_products.ts
 
 This file uses TypeScript interfaces and typed objects to improve maintainability and reusability.
 
