@@ -42,10 +42,12 @@ export class ProductsPage{
    }
    
    //method that verifies cart count is as expected 
-   async verifyCartCount(expcetedCount:number): Promise<void>{
+   async verifyCartCount(expectedCount:number): Promise<void>{
    
-    await expect(this.cartBadge).toContainText(expcetedCount.toString());
+    await expect(this.cartBadge).toContainText(expectedCount.toString());
    }
+
+   
    async goToCart(): Promise<void> {
       await this.cartLink.click();
    }

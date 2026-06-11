@@ -7,7 +7,9 @@ export interface UserCredentials {
   type: UserType; 
   firstName?: string;
   lastName?: string;
-  postalCode?: string
+  postalCode?: string;
+  errorMessage?:string;
+  expected:string;
 } 
  
 export const users: UserCredentials[] = [ 
@@ -17,17 +19,21 @@ export const users: UserCredentials[] = [
     type: 'standard',
     firstName:'Parth',
     lastName:'Dalvi',
-    postalCode:'40001'
+    postalCode:'40001',
+    expected:'success'
   }, 
   { 
     username: 'locked_out_user', 
     password: 'secret_sauce', 
-    type: 'locked' 
+    type: 'locked', 
+    errorMessage:'Epic sadface: Sorry, this user has been locked out.',
+    expected:'failure'
   }, 
   { 
     username: 'problem_user', 
     password: 'secret_sauce', 
-    type: 'problem' 
+    type: 'problem' ,
+    expected:'success'
   } 
 ]; 
 
